@@ -10,7 +10,7 @@ characters =  \
 len_min , len_max = 2 , 6
 
 url = 'https://ecs.monespacecandidat.com/'
-utilisateur = os.environ.get("MY_USERNAME")
+utilisateur = os.getenv("MY_USERNAME")
 
 driver = webdriver.Chrome()
 driver.get(url)
