@@ -1,4 +1,5 @@
 from selenium import webdriver
+import os
 
 characters =  \
      ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','V','W','X','Y','Z',
@@ -9,7 +10,7 @@ characters =  \
 len_min , len_max = 2 , 6
 
 url = 'https://ecs.monespacecandidat.com/'
-utilisateur = 'nabil.abdelouahed@student-cs.fr'
+utilisateur = os.environ.get("MY_USERNAME")
 
 driver = webdriver.Chrome()
 driver.get(url)

@@ -1,4 +1,5 @@
 from selenium import webdriver
+import os
 
 characters =  \
      ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
@@ -13,7 +14,7 @@ pwd = characters[0] * length
 pwd_img[-1] -= 1
 
 url = 'https://ecs.monespacecandidat.com/'
-utilisateur = 'nabil.abdelouahed@student-cs.fr'
+utilisateur = os.environ.get("MY_USERNAME")
 
 driver = webdriver.Chrome()
 driver.get(url)
