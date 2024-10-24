@@ -5,3 +5,8 @@ f = open("pwd_list.txt", "a")
 f.write(pwd)
 f.close()
 ```
+Or : 
+```
+with open("pwd_list.txt", "w") as file:
+    file.write(pwd)
+```
