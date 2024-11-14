@@ -13,7 +13,7 @@ pwd_img = [0 for i in range(length)]
 pwd = characters[0] * length
 pwd_img[-1] -= 1
 
-url = 'https://ecs.monespacecandidat.com/'
+url = ''
 utilisateur = os.getenv("MY_USERNAME")
 
 driver = webdriver.Chrome()
